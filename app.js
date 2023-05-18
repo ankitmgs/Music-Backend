@@ -13,7 +13,7 @@ const dotenv = require("dotenv").config();
 
 const Port = process.env.PORT;
 
-app.use(cors({ origin: ["http://localhost:3000"] }));
+app.use(cors({ origin: ["http://localhost:3000", "https://music-app-ankit.onrender.com"] }));
 
 //to convert json into understandable for machine
 app.use(express.json());
